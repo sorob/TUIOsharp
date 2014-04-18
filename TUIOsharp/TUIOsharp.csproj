@@ -36,9 +36,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TuioContainer.cs" />
     <Compile Include="TuioCursor.cs" />
     <Compile Include="TuioEntity.cs" />
+    <Compile Include="TuioListener.cs" />
+    <Compile Include="TuioObject.cs" />
+    <Compile Include="TuioPoint.cs" />
     <Compile Include="TuioServer.cs" />
+    <Compile Include="TuioTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OSCsharp\OSCsharp.csproj">
@@ -47,6 +52,10 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
